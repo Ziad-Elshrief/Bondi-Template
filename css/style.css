@@ -1,4 +1,4 @@
-:root{
+:root {
     --dark-color: #19283f;
     --green-color: #33d1cc;
     --red-color: #ff3150;
@@ -12,11 +12,7 @@ body {
 
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-.main-title::before{
+.main-title::before {
     content: "";
     width: 120px;
     height: 2px;
@@ -27,44 +23,46 @@ html {
     transform: translateX(-50%);
 }
 
-.main-btn{
+.main-btn {
     background-color: var(--red-color);
     color: var(--yellow-color);
     font-weight: bold;
+    padding: 10px;
     margin: 5px 0;
 }
-.main-btn:hover{
+
+.main-btn:hover {
     background-color: var(--red-color);
     color: var(--yellow-color);
 }
 
-nav{
+nav {
     background-color: var(--dark-color);
 }
 
-nav .nav-item{
+nav .nav-item {
     padding: 5px;
 }
 
-nav .nav-link{
+nav .nav-link {
     color: white;
-    
 }
 
 
 nav .nav-link:not(.active):hover,
-nav .nav-link.active{
+nav .nav-link.active {
     color: var(--green-color) !important;
 }
 
-nav i.search{
+nav i.search {
     color: var(--green-color);
     border-left: solid 1px var(--green-color);
 }
 
-.navbar-toggler span{
+.navbar-toggler span {
     color: white;
 }
+
 .navbar-toggler {
     padding: 0.6em 0.7em;
     font-size: var(--bs-navbar-toggler-font-size);
@@ -82,14 +80,14 @@ nav i.search{
 }
 
 .navbar-toggler:focus {
-    box-shadow:none;
+    box-shadow: none;
 }
 
-.landing{
+.landing {
     background-color: var(--dark-color);
 }
 
-.services .service-icon::before{
+.services .service-icon::before {
     counter-increment: service-number;
     content: counter(service-number);
     font-size: 12rem;
@@ -97,11 +95,11 @@ nav i.search{
     color: var(--section-color);
 }
 
-.services .service h2{
+.services .service h2 {
     color: var(--yellow-color);
 }
 
-.services .service i{
+.services .service i {
     color: var(--green-color);
     position: absolute;
     bottom: 0;
@@ -109,38 +107,63 @@ nav i.search{
     transform: translateX(-50%);
 }
 
-.projects{
+.projects {
     background-color: var(--section-color);
 }
 
-.info{
-    .container>p{
+.info {
+    .container>p {
         max-width: 500px;
-        
     }
 }
 
-.team{
+.team {
     background-color: var(--section-color);
-    h2{
+
+    h2 {
         color: var(--yellow-color);
     }
-    .team-member h4{
+
+    .team-member h4 {
         background-color: var(--green-color);
     }
 }
 
-.start-project{
+.start-project {
     background-color: var(--dark-color);
 }
 
-.blog{
-    .card{
+.blog {
+    .card {
         border: none;
         padding: 0;
     }
 }
 
-.subscribe{
+.subscribe {
     background-color: var(--yellow-color);
+
+    p {
+        color: var(--dark-color);
+    }
+
+    input[type="email"] {
+        border: none;
+        border-bottom: 1px solid white;
+    }
+
+    input[type="email"]::placeholder {
+        color: white;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    input[type="submit"] {
+        width: fit-content;
+        border: none;
+        background-color: var(--dark-color);
+        color: var(--yellow-color);
+    }
 }
