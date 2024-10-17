@@ -109,6 +109,18 @@ nav i.search {
 
 .projects {
     background-color: var(--section-color);
+    li{
+        cursor: pointer;
+        font-weight: bold;
+        padding: 10px 12px;
+    }
+    li.active{
+        background-color: var(--red-color);
+        color: var(--yellow-color);
+    }
+    li:not(.active):hover{
+        color: var(--red-color);
+    }
 }
 
 .info {
