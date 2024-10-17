@@ -109,16 +109,19 @@ nav i.search {
 
 .projects {
     background-color: var(--section-color);
-    li{
+
+    li {
         cursor: pointer;
         font-weight: bold;
         padding: 10px 12px;
     }
-    li.active{
+
+    li.active {
         background-color: var(--red-color);
         color: var(--yellow-color);
     }
-    li:not(.active):hover{
+
+    li:not(.active):hover {
         color: var(--red-color);
     }
 }
@@ -148,7 +151,6 @@ nav i.search {
 .blog {
     .card {
         border: none;
-        padding: 0;
     }
 }
 
@@ -177,5 +179,42 @@ nav i.search {
         border: none;
         background-color: var(--dark-color);
         color: var(--yellow-color);
+    }
+}
+
+footer {
+    background-color: var(--dark-color);
+
+    .info p:last-of-type span {
+        color: var(--yellow-color);
+    }
+
+    .info p:nth-last-child(2) span {
+        color: var(--green-color);
+    }
+
+    .socials a {
+        text-decoration: none;
+        color: white;
+
+        &.fb {
+            background-color: #1877F2;
+            padding: 10px 11px;
+        }
+
+        &.x {
+            background-color: #000000;
+            padding: 10px;
+        }
+
+        &.l-in {
+            background-color: #0077B5;
+            padding: 10px 12px;
+        }
+
+        &.yt {
+            background-color: #FF0000;
+            padding: 10px;
+        }
     }
 }
