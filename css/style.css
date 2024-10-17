@@ -1,0 +1,146 @@
+:root{
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+    counter-set: service-number;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.main-title::before{
+    content: "";
+    width: 120px;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--green-color);
+    transform: translateX(-50%);
+}
+
+.main-btn{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    font-weight: bold;
+    margin: 5px 0;
+}
+.main-btn:hover{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+
+nav{
+    background-color: var(--dark-color);
+}
+
+nav .nav-item{
+    padding: 5px;
+}
+
+nav .nav-link{
+    color: white;
+    
+}
+
+
+nav .nav-link:not(.active):hover,
+nav .nav-link.active{
+    color: var(--green-color) !important;
+}
+
+nav i.search{
+    color: var(--green-color);
+    border-left: solid 1px var(--green-color);
+}
+
+.navbar-toggler span{
+    color: white;
+}
+.navbar-toggler {
+    padding: 0.6em 0.7em;
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: white;
+    background-color: transparent;
+    border: var(--bs-border-width) solid white;
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: var(--bs-navbar-toggler-transition);
+}
+
+.navbar-toggler[aria-expanded="true"] {
+    border: var(--bs-border-width) solid var(--green-color);
+    color: var(--green-color);
+}
+
+.navbar-toggler:focus {
+    box-shadow:none;
+}
+
+.landing{
+    background-color: var(--dark-color);
+}
+
+.services .service-icon::before{
+    counter-increment: service-number;
+    content: counter(service-number);
+    font-size: 12rem;
+    line-height: 1;
+    color: var(--section-color);
+}
+
+.services .service h2{
+    color: var(--yellow-color);
+}
+
+.services .service i{
+    color: var(--green-color);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.projects{
+    background-color: var(--section-color);
+}
+
+.info{
+    .container>p{
+        max-width: 500px;
+        
+    }
+}
+
+.team{
+    background-color: var(--section-color);
+    h2{
+        color: var(--yellow-color);
+    }
+    .team-member h4{
+        background-color: var(--green-color);
+    }
+}
+
+.start-project{
+    background-color: var(--dark-color);
+}
+
+.blog{
+    .card{
+        border: none;
+        padding: 0;
+    }
+}
+
+.subscribe{
+    background-color: var(--yellow-color);
+}
